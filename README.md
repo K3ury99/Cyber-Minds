@@ -1,38 +1,51 @@
 # Cyber-Minds
 
-## Descripción
-**Cyber-Minds** es un proyecto que utiliza una combinación de HTML, CSS, JavaScript y C# para desarrollar soluciones innovadoras en el campo de la ciberseguridad.
- 
-## Características
-- **Lenguajes Utilizados**: 
-  - HTML (57.6%)
-  - C# (40.3%)
-  - CSS (1.8%)
-  - JavaScript (0.3%)
- 
-## Estructura del Proyecto
-- **Carpeta Principal**: `CyberMinds`
-- **Archivos Clave**:
-  - `.gitignore`
-  - `LICENSE`
-  - `README.md`
- 
-## Instalación
-1. Clona el repositorio:
+## Description
+**Cyber-Minds** is a web application developed with ASP.NET MVC that connects to a C# web API and a SQL Server database. The system is designed to manage detailed information about clients, products, vendors, and branches, providing a comprehensive and efficient solution for data management.
+
+## Features
+- **Technologies Used**:
+  - **ASP.NET MVC**: Primary framework for web application development.
+  - **C#**: Programming language used for the web API.
+  - **SQL Server**: Database management system for storing and retrieving information.
+  - **HTML/CSS/JavaScript**: Web technologies for user interface design and functionality.
+
+## Project Structure
+- **Main Folder**: `CyberMinds`
+- **Key Subfolders and Files**:
+  - `Controllers/` - Application controllers.
+  - `Models/` - Data models and entity classes.
+  - `Views/` - Application views for data presentation.
+  - `Scripts/` - JavaScript files and libraries.
+  - `Styles/` - CSS files for styling and design.
+  - `.gitignore` - Configuration file for ignoring unwanted files in Git.
+  - `LICENSE` - Project license file.
+  - `README.md` - Document with project information.
+
+## Installation
+1. Clone the repository:
     ```bash
     git clone https://github.com/K3ury99/Cyber-Minds.git
     ```
-2. Navega a la carpeta del proyecto:
+2. Navigate to the project folder:
     ```bash
     cd Cyber-Minds/CyberMinds
     ```
-3. Sigue las instrucciones específicas de cada archivo para su configuración y uso.
- 
-## Licencia
-Este proyecto está licenciado bajo la [MIT License](./LICENSE).
- 
-## Contribuciones
-Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cualquier cambio que desees realizar.
- 
-## Contacto
-Para cualquier consulta o información adicional, puedes contactar al autor a través de su perfil de GitHub [K3ury99](https://github.com/K3ury99).
+3. Open the project in Visual Studio or your preferred IDE.
+4. Restore project dependencies and set up the database.
+5. Configure the `appsettings.json` file with your SQL Server connection details.
+6. Run the application and verify that it deploys correctly in your local environment.
+
+## License
+This project is licensed under the [MIT License](./LICENSE).
+
+## Contributions
+Contributions are welcome. If you wish to contribute to the project, please follow these steps:
+1. Fork the repository.
+2. Create a branch for your feature or bug fix (`git checkout -b feature/new-feature`).
+3. Make your changes and commit (`git commit -am 'Add new feature'`).
+4. Push your branch (`git push origin feature/new-feature`).
+5. Open a pull request on GitHub.
+
+## Contact
+For questions or support, you can reach K3ury99 on [GitHub](https://github.com/K3ury99) or via email at [your-email@example.com](mailto:your-email@example.com).
