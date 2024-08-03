@@ -1,0 +1,6 @@
+@CyberMinds.API_HostAddress = http://localhost:5010
+
+GET {{CyberMinds.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
