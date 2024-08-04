@@ -1,0 +1,91 @@
+create database CyberMinds;
+
+USE CyberMinds;
+
+CREATE TABLE Clientes (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Nombre NVARCHAR(100) NOT NULL,
+    Apellido NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) NOT NULL UNIQUE,
+    Telefono NVARCHAR(15),
+    Direccion NVARCHAR(255),
+    Ciudad NVARCHAR(100),
+    Estado NVARCHAR(100),
+    Pais NVARCHAR(100)
+);
+
+CREATE TABLE Productos (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Nombre NVARCHAR(100) NOT NULL,
+    Descripcion NVARCHAR(255),
+    Precio DECIMAL(10, 2) NOT NULL,
+    Stock INT NOT NULL
+);
+
+CREATE TABLE Sucursales (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Nombre NVARCHAR(100) NOT NULL,
+    Direccion NVARCHAR(255),
+    Ciudad NVARCHAR(100),
+    Estado NVARCHAR(100),
+    Pais NVARCHAR(100)
+);
+
+CREATE TABLE Vendedores (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Nombre NVARCHAR(100) NOT NULL,
+    Apellido NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) NOT NULL UNIQUE,
+    Telefono NVARCHAR(15),
+    SucursalId INT FOREIGN KEY REFERENCES Sucursales(Id)
+);
+
+INSERT INTO Clientes (Nombre, Apellido, Email, Telefono, Direccion, Ciudad, Estado, Pais) VALUES
+('Juan', 'Pérez', 'juan.perez@example.com', '555-0101', 'Av. Siempre Viva 742', 'Springfield', 'IL', 'USA'),
+('María', 'García', 'maria.garcia@example.com', '555-0102', 'Av. Central 123', 'Shelbyville', 'IL', 'USA'),
+('Pedro', 'Rodríguez', 'pedro.rodriguez@example.com', '555-0103', 'Calle de la Luna 45', 'Springfield', 'IL', 'USA'),
+('Ana', 'Martínez', 'ana.martinez@example.com', '555-0104', 'Calle del Sol 789', 'Springfield', 'IL', 'USA'),
+('Luis', 'Fernández', 'luis.fernandez@example.com', '555-0105', 'Paseo de la Reforma 300', 'Mexico City', 'CDMX', 'México'),
+('Laura', 'López', 'laura.lopez@example.com', '555-0106', 'Calle del Ángel 12', 'Barcelona', 'Cataluña', 'España'),
+('Carlos', 'Sánchez', 'carlos.sanchez@example.com', '555-0107', 'Calle de los Pinos 34', 'Madrid', 'Madrid', 'España'),
+('Julia', 'Torres', 'julia.torres@example.com', '555-0108', 'Av. de los Álamos 56', 'Buenos Aires', 'CABA', 'Argentina'),
+('Miguel', 'Vázquez', 'miguel.vazquez@example.com', '555-0109', 'Rua das Flores 78', 'São Paulo', 'SP', 'Brasil'),
+('Sofía', 'Morales', 'sofia.morales@example.com', '555-0110', 'Avenida Brasil 90', 'Rio de Janeiro', 'RJ', 'Brasil');
+
+INSERT INTO Productos (Nombre, Descripcion, Precio, Stock) VALUES
+('Zapatos deportivos', 'Zapatos cómodos para deportes', 59.99, 100),
+('Camisa de algodón', 'Camisa ligera y cómoda de algodón', 29.99, 150),
+('Chaqueta de cuero', 'Chaqueta de cuero genuino', 89.99, 50),
+('Pantalones vaqueros', 'Jeans de mezclilla azul', 39.99, 200),
+('Gafas de sol', 'Gafas de sol UV protección', 19.99, 75),
+('Reloj digital', 'Reloj con múltiples funciones', 49.99, 60),
+('Sombrero de lana', 'Sombrero de lana para invierno', 24.99, 80),
+('Bolso de mano', 'Bolso elegante de cuero', 69.99, 40),
+('Bufanda de lana', 'Bufanda cálida de lana', 14.99, 90),
+('Guantes de cuero', 'Guantes de cuero para invierno', 34.99, 70);
+
+INSERT INTO Sucursales (Nombre, Direccion, Ciudad, Estado, Pais) VALUES
+('Sucursal Centro', 'Calle Mayor 1', 'Madrid', 'Madrid', 'España'),
+('Sucursal Norte', 'Av. de la Constitución 22', 'Barcelona', 'Cataluña', 'España'),
+('Sucursal Sur', 'Calle del Sur 5', 'Buenos Aires', 'CABA', 'Argentina'),
+('Sucursal Oeste', 'Av. de los Pinos 9', 'São Paulo', 'SP', 'Brasil'),
+('Sucursal Este', 'Rua das Flores 56', 'Rio de Janeiro', 'RJ', 'Brasil'),
+('Sucursal Plaza', 'Av. Reforma 200', 'Mexico City', 'CDMX', 'México'),
+('Sucursal Ciudad', 'Calle de la Luna 20', 'Springfield', 'IL', 'USA'),
+('Sucursal Parque', 'Av. Central 100', 'Shelbyville', 'IL', 'USA'),
+('Sucursal Norteño', 'Calle del Sol 15', 'Springfield', 'IL', 'USA'),
+('Sucursal Oesteño', 'Paseo de la Reforma 350', 'Mexico City', 'CDMX', 'México');
+
+INSERT INTO Vendedores (Nombre, Apellido, Email, Telefono, SucursalId) VALUES
+('Luis', 'Gómez', 'luis.gomez@example.com', '555-0201', 1),
+('Carla', 'Paredes', 'carla.paredes@example.com', '555-0202', 1),
+('José', 'Hernández', 'jose.hernandez@example.com', '555-0203', 2),
+('Ana', 'Sánchez', 'ana.sanchez@example.com', '555-0204', 2),
+('Ricardo', 'Martínez', 'ricardo.martinez@example.com', '555-0205', 3),
+('Mariana', 'Vargas', 'mariana.vargas@example.com', '555-0206', 3),
+('Sergio', 'Cordero', 'sergio.cordero@example.com', '555-0207', 4),
+('Elena', 'Moreno', 'elena.moreno@example.com', '555-0208', 4),
+('Daniel', 'Ramírez', 'daniel.ramirez@example.com', '555-0209', 5),
+('Lucía', 'García', 'lucia.garcia@example.com', '555-0210', 5);
+
+
