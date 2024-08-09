@@ -7,6 +7,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <div id="carouselExample" class="carousel slide" asp-controller="Home" style="border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+                <img src="/carousel/1.jpg" class="d-block w-100 c-img" alt="Slide 1">
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/carousel/2.jpg" class="d-block w-100 c-img" alt="Slide 2">
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/carousel/3.jpg" class="d-block w-100 c-img" alt="Slide 3">
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/carousel/1.jpg" class="d-block w-100 c-img" alt="Slide 4">
+            </div>
+            <div class="carousel-item c-item">
+                <img src="/carousel/2.jpg" class="d-block w-100 c-img" alt="Slide 5">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
     <title>Boostim - Stay Ahead of the Curve</title>
     <style>
         :root {
@@ -123,32 +161,29 @@
 </head>
 <body>
     <main class="container">
-        <section class="hero">
-            <h1>Stay ahead of the curve with our forward-thinking solutions</h1>
-            <p>Drive more traffic and boost your product sales with our innovative strategies.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </section>
-
+        <section class="hero"> <h1>Mantente a la vanguardia con nuestras soluciones visionarias</h1> <p>Impulsa más tráfico y aumenta las ventas de tus productos con nuestras estrategias innovadoras.</p> <a href="#contact" class="cta-button">Empezar</a> </section>
         <section id="features" class="features">
             <div class="feature-card">
-                <h3>230+ Satisfied Clients</h3>
-                <p>Join our growing list of success stories and achieve your marketing objectives.</p>
+                <h3>+230 Clientes Satisfechos</h3>
+                <p>Únete a nuestra creciente lista de historias de éxito y logra tus objetivos de marketing.</p>
             </div>
             <div class="feature-card">
-                <h3>920+ Completed Projects</h3>
-                <p>Benefit from our extensive experience across various industries and challenges.</p>
+                <h3>+920 Proyectos Completados</h3>
+                <p>Benefíciate de nuestra amplia experiencia en diversos sectores y desafíos.</p>
             </div>
             <div class="feature-card">
-                <h3>Data-Driven Strategies</h3>
-                <p>Leverage our analytics to make informed decisions and optimize your campaigns.</p>
+                <h3>Estrategias Basadas en Datos</h3>
+                <p>Aprovecha nuestros análisis para tomar decisiones informadas y optimizar tus campañas.</p>
             </div>
         </section>
 
         <section id="how-we-work" class="how-we-work">
-            <h2>How We Work</h2>
-            <p>Our process is designed to deliver the best results for your business.</p>
-            <div class="video-placeholder">
-                <p>Video Placeholder</p>
+            <h2>Cómo Trabajamos</h2>
+            <p>Nuestro proceso está diseñado para brindar los mejores resultados para tu negocio.</p>
+            <div class="video-container">
+                <video controls style="height: 1024pxpx;">
+                    <source src="/videos/video.mp4" type="video/mp4">
+                </video>
             </div>
         </section>
     </main>
@@ -157,7 +192,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Smooth scrolling for anchor links
+            // Desplazamiento suave para enlaces de anclaje
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -167,7 +202,7 @@
                 });
             });
 
-            // Add animation to feature cards
+            // Agregar animación a las tarjetas de características
             const featureCards = document.querySelectorAll('.feature-card');
             featureCards.forEach(card => {
                 card.addEventListener('mouseenter', () => {

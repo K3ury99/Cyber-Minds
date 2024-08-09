@@ -52,3 +52,34 @@ body {
         padding: 10px 0;
     }
 }
+
+
+
+/** imagenes - carousel Home **/
+.c-item {
+    height: 480px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Relación de aspecto 16:9 */
+    overflow: hidden;
+}
+
+    .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
+    }
