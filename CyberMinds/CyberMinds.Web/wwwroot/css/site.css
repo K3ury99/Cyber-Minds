@@ -1,22 +1,54 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+/* New styles for a taller menu */
+.navbar {
+    min-height: 80px; /* Increase this value to make the navbar taller */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Increase font size of the brand/logo */
+    padding: 15px 0; /* Add vertical padding */
+}
+
+.nav-link {
+    font-size: 1.2rem; /* Increase font size of menu items */
+    padding: 20px 15px !important; /* Increase padding of menu items */
+}
+
+/* Adjust dropdown menus if you have any */
+.dropdown-menu {
+    margin-top: 0;
+}
+
+/* For mobile devices, adjust the toggle button */
+.navbar-toggler {
+    padding: 10px;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-item {
+        padding: 10px 0;
+    }
 }

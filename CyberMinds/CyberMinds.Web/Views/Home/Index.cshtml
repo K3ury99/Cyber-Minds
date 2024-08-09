@@ -2,7 +2,182 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostim - Stay Ahead of the Curve</title>
+    <style>
+        :root {
+            --primary-color: #00bf63;
+            --text-color: #333;
+            --bg-color: #f5f5f5;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+            .cta-button:hover {
+                background-color: #00a855;
+            }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .feature-card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+            .feature-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .feature-card h3 {
+                margin-top: 0;
+                color: var(--primary-color);
+            }
+
+        .how-we-work {
+            margin-top: 4rem;
+            text-align: center;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .video-placeholder {
+            background-color: #ddd;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+            .video-placeholder:hover {
+                background-color: #ccc;
+            }
+
+        .footer-spacer {
+            height: 100px; /* Adjust this value as needed */
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="hero">
+            <h1>Stay ahead of the curve with our forward-thinking solutions</h1>
+            <p>Drive more traffic and boost your product sales with our innovative strategies.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </section>
+
+        <section id="features" class="features">
+            <div class="feature-card">
+                <h3>230+ Satisfied Clients</h3>
+                <p>Join our growing list of success stories and achieve your marketing objectives.</p>
+            </div>
+            <div class="feature-card">
+                <h3>920+ Completed Projects</h3>
+                <p>Benefit from our extensive experience across various industries and challenges.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Data-Driven Strategies</h3>
+                <p>Leverage our analytics to make informed decisions and optimize your campaigns.</p>
+            </div>
+        </section>
+
+        <section id="how-we-work" class="how-we-work">
+            <h2>How We Work</h2>
+            <p>Our process is designed to deliver the best results for your business.</p>
+            <div class="video-placeholder">
+                <p>Video Placeholder</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer-spacer"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Add animation to feature cards
+            const featureCards = document.querySelectorAll('.feature-card');
+            featureCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-5px)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
