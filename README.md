@@ -1,7 +1,7 @@
 # 🚀 Cyber-Minds
 **Cyber-Minds** is a web application developed with ASP.NET MVC that connects to a C# web API and a SQL Server database. The system is designed to manage detailed information about clients, products, vendors, and branches, providing a comprehensive and efficient solution for data management.
 
-<img src="https://github.com/user-attachments/assets/cc003463-5c98-49fa-8f29-a30456b0f4d3" width="49%"></img>
+<img src="https://github.com/user-attachments/assets/89273015-c5e1-4dc6-95f5-3cd16bed5db8" width="49%"></img>
 
 
 ## 🔗 Features
