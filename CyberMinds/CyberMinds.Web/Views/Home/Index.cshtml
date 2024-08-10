@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <div id="carouselExample" class="carousel slide" asp-controller="Home" style="border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
 
         <div class="carousel-indicators">
@@ -44,139 +44,63 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+    <title>CyberMinds - Stay Ahead of the Curve</title>
     
-    <title>Boostim - Stay Ahead of the Curve</title>
-    <style>
-        :root {
-            --primary-color: #00bf63;
-            --text-color: #333;
-            --bg-color: #f5f5f5;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
-
-        main {
-            flex: 1 0 auto;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: #fff;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-            .cta-button:hover {
-                background-color: #00a855;
-            }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .feature-card {
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-            .feature-card:hover {
-                transform: translateY(-5px);
-            }
-
-            .feature-card h3 {
-                margin-top: 0;
-                color: var(--primary-color);
-            }
-
-        .how-we-work {
-            margin-top: 4rem;
-            text-align: center;
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .video-placeholder {
-            background-color: #ddd;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 2rem;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            background-color: #fff;
-        }
-
-            .video-placeholder:hover {
-                background-color: #ccc;
-            }
-
-        .footer-spacer {
-            height: 100px; /* Adjust this value as needed */
-        }
-    </style>
 </head>
 <body>
     <main class="container">
-        <section class="hero"> <h1>Mantente a la vanguardia con nuestras soluciones visionarias</h1> <p>Impulsa más tráfico y aumenta las ventas de tus productos con nuestras estrategias innovadoras.</p> <a href="#contact" class="cta-button">Empezar</a> </section>
+        <section class="hero">
+            <h1>Luce con Estilo y Comodidad con Nuestra Colección de Moda</h1>
+            <p>Descubre las mejores prendas del mercado que combinan elegancia, funcionalidad y confort para cualquier ocasión.</p>
+            <a href="#contact" class="cta-button">Explorar Colección</a>
+        </section>
+
         <section id="features" class="features">
             <div class="feature-card">
-                <h3>+230 Clientes Satisfechos</h3>
-                <p>Únete a nuestra creciente lista de historias de éxito y logra tus objetivos de marketing.</p>
+                <h3>Zapatos Cómodos para Deportes</h3>
+                <p>Experimenta la combinación perfecta de estilo y rendimiento con nuestros zapatos deportivos, diseñados para ofrecer soporte y amortiguación inigualables.</p>
             </div>
             <div class="feature-card">
-                <h3>+920 Proyectos Completados</h3>
-                <p>Benefíciate de nuestra amplia experiencia en diversos sectores y desafíos.</p>
+                <h3>Chaqueta de Cuero Genuino</h3>
+                <p>Añade un toque de distinción a tu look con nuestra chaqueta de cuero genuino, una prenda atemporal que realza tu estilo personal.</p>
             </div>
             <div class="feature-card">
-                <h3>Estrategias Basadas en Datos</h3>
-                <p>Aprovecha nuestros análisis para tomar decisiones informadas y optimizar tus campañas.</p>
+                <h3>Gafas de Sol con Protección UV</h3>
+                <p>Protege tus ojos con estilo gracias a nuestras gafas de sol con protección UV, un accesorio imprescindible para los días soleados.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Bolso Elegante de Cuero</h3>
+                <p>Aporta un toque de sofisticación a tu atuendo con nuestro bolso de cuero, ideal para cualquier ocasión.</p>
+            </div>
+        </section>
+
+        <section class="hero">
+            <h1>¡Reseñas de nuestros clientes más importantes!</h1>
+        </section>
+
+        <section id="reviews" class="features reviews">
+            <div class="feature-card">
+                <h3>Carlos G. 📔</h3>
+                <p>"Los zapatos deportivos son extremadamente cómodos y me permiten entrenar sin problemas. ¡Totalmente recomendados!"</p>
+            </div>
+            <div class="feature-card">
+                <h3>Laura M. 📔</h3>
+                <p>"La chaqueta de cuero genuino tiene un ajuste perfecto y se siente como una segunda piel. No podría estar más feliz con mi compra."</p>
+            </div>
+            <div class="feature-card">
+                <h3>Andrés P. 📔</h3>
+                <p>"Las gafas de sol no solo protegen mis ojos, sino que también se ven geniales. Las uso todos los días."</p>
+            </div>
+            <div class="feature-card">
+                <h3>Sofia L. 📔</h3>
+                <p>"El bolso de cuero es elegante y espacioso. Es mi compañero ideal tanto para el trabajo como para salidas casuales."</p>
             </div>
         </section>
 
         <section id="how-we-work" class="how-we-work">
-            <h2>Cómo Trabajamos</h2>
-            <p>Nuestro proceso está diseñado para brindar los mejores resultados para tu negocio.</p>
+            <h2>Como trabajamos para brindarles siempre lo mejor</h2>
+            <p>Contamos con una amplia gama de profesionales para brindarles los mejores productos con la mejor calidad y precios</p>
             <div class="video-container">
                 <video controls style="height: 500px;">
                     <source src="/videos/video.mp4" type="video/mp4">
@@ -184,6 +108,7 @@
             </div>
         </section>
     </main>
+
 
     <div class="footer-spacer"></div>
 
