@@ -25,6 +25,20 @@
   - `LICENSE` - Project license file.
   - `README.md` - Document with project information.
 
+## Database configuration
+
+1. Make sure you have SQLserver installed on your system.
+
+2. Open the `appsettings.json` file and check the database connection string. Make sure it is pointing correctly to the Sqlite3 database file.
+
+3. Run the migrations to create the database:
+    ```bash
+    add-migration init
+    ```
+3. Send the update of the tables to the database:
+    ```bash
+    update-database
+    ```
 ## 🐱‍👤 Installation
 1. Clone the repository:
     ```bash
@@ -49,3 +63,7 @@ Contributions are welcome. If you wish to contribute to the project, please foll
 3. Make your changes and commit (`git commit -am 'Add new feature'`).
 4. Push your branch (`git push origin feature/new-feature`).
 5. Open a pull request on GitHub.
+
+## Credits 🎉
+
+This project was developed by: **Keury Ramírez, Victor Sanchez**.
