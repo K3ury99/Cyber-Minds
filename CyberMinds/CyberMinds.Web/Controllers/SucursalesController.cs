@@ -19,10 +19,21 @@ namespace CyberMinds.Web.Controllers
         }
 
         // GET: Sucursales
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string buscar)
         {
-            return View(await _context.Sucursales.ToListAsync());
+            // Método para buscar en la tabla cliente
+            var sucursales = from sucursal in _context.Sucursales select sucursal;
+
+            if (!String.IsNullOrEmpty(buscar))
+            {
+                // Método para buscar el nombre o apellido en la tabla cliente
+                sucursales = sucursales.Where(c => c.Nombre!.Contains(buscar) || c.Direccion!.Contains(buscar) || c.Ciudad!.Contains(buscar) || c.Estado!.Contains(buscar) || c.Pais!.Contains(buscar));
+            }
+
+            return View(await sucursales.ToListAsync());
         }
+
+
 
         // GET: Sucursales/Details/5
         public async Task<IActionResult> Details(int? id)

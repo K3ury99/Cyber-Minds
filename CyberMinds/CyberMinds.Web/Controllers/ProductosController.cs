@@ -19,10 +19,21 @@ namespace CyberMinds.Web.Controllers
         }
 
         // GET: Productoes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string buscar)
         {
-            return View(await _context.Productos.ToListAsync());
+            // Método para buscar en la tabla cliente
+            var productos = from producto in _context.Productos select producto;
+
+            if (!String.IsNullOrEmpty(buscar))
+            {
+                // Método para buscar el nombre o apellido en la tabla cliente
+                productos = productos.Where(c => c.Nombre!.Contains(buscar) || c.Descripcion!.Contains(buscar));
+            }
+
+            return View(await productos.ToListAsync());
         }
+
+
 
         // GET: Productoes/Details/5
         public async Task<IActionResult> Details(int? id)
