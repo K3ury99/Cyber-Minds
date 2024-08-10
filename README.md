@@ -29,7 +29,7 @@
 
 1. Make sure you have SQLserver installed on your system.
 
-2. Open the `appsettings.json` file and check the database connection string. Make sure it is pointing correctly to the Sqlite3 database file.
+2. Open the `appsettings.json` file and check the database connection string. Make sure it is pointing correctly to the SQLserver database file.
 
 3. Run the migrations to create the database:
     ```bash
