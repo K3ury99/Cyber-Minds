@@ -1,8 +1,10 @@
 # 🚀 Cyber-Minds
 **Cyber-Minds** is a web application developed with ASP.NET MVC that connects to a C# web API and a SQL Server database. The system is designed to manage detailed information about clients, products, vendors, and branches, providing a comprehensive and efficient solution for data management.
 
-<img src="https://github.com/user-attachments/assets/89273015-c5e1-4dc6-95f5-3cd16bed5db8" width="49%"></img>
-
+<div style="display: flex;">
+  <img src="https://github.com/user-attachments/assets/20924698-5290-4fe7-a5ae-041e02eb00d9" width="49%"></img>
+  <img src="https://github.com/user-attachments/assets/245554d9-a565-4811-876b-9819514349e5" width="49%"></img>
+</div>
 
 ## 🔗 Features
 - **Technologies Used**:
@@ -23,6 +25,20 @@
   - `LICENSE` - Project license file.
   - `README.md` - Document with project information.
 
+## 🏆 Database configuration
+
+1. Make sure you have SQLserver installed on your system.
+
+2. Open the `appsettings.json` file and check the database connection string. Make sure it is pointing correctly to the SQLserver database file.
+
+3. Run the migrations to create the database:
+    ```bash
+    add-migration init
+    ```
+3. Send the update of the tables to the database:
+    ```bash
+    update-database
+    ```
 ## 🐱‍👤 Installation
 1. Clone the repository:
     ```bash
@@ -47,3 +63,7 @@ Contributions are welcome. If you wish to contribute to the project, please foll
 3. Make your changes and commit (`git commit -am 'Add new feature'`).
 4. Push your branch (`git push origin feature/new-feature`).
 5. Open a pull request on GitHub.
+
+## Credits 🎉
+
+This project was developed by: **Keury Ramírez, Victor Sanchez**.
