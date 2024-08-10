@@ -25,7 +25,7 @@
   - `LICENSE` - Project license file.
   - `README.md` - Document with project information.
 
-## Database configuration
+## 🏆 Database configuration
 
 1. Make sure you have SQLserver installed on your system.
 
