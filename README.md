@@ -3,7 +3,7 @@
 
 <div style="display: flex;">
   <img src="https://github.com/user-attachments/assets/20924698-5290-4fe7-a5ae-041e02eb00d9" width="49%"></img>
-  <img src="https://github.com/user-attachments/assets/245554d9-a565-4811-876b-9819514349e5" width="49%"></img>
+  <img src="https://github.com/user-attachments/assets/bdd3ce65-ca9e-4b09-b324-634cab42d6bf" width="49%"></img>
 </div>
 
 ## 🔗 Features
