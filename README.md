@@ -53,9 +53,6 @@
 5. Configure the `appsettings.json` file with your SQL Server connection details.
 6. Run the application and verify that it deploys correctly in your local environment.
 
-## 📔 License
-This project is licensed under the [MIT License](./LICENSE).
-
 ## 💎 Contributions
 Contributions are welcome. If you wish to contribute to the project, please follow these steps:
 1. Fork the repository.
@@ -63,6 +60,9 @@ Contributions are welcome. If you wish to contribute to the project, please foll
 3. Make your changes and commit (`git commit -am 'Add new feature'`).
 4. Push your branch (`git push origin feature/new-feature`).
 5. Open a pull request on GitHub.
+
+## 📔 License
+This project is licensed under the [MIT License](./LICENSE).
 
 ## Credits 🎉
 
