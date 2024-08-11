@@ -6,7 +6,7 @@
   <img src="https://github.com/user-attachments/assets/bdd3ce65-ca9e-4b09-b324-634cab42d6bf" width="49%"></img>
 </div>
 
-## Explanatory video of the project
+## 🎥 Explanatory video of the project
 - **Link:** https://www.youtube.com/watch?v=eOjEbYPB4s0
 
 ## 🔗 Features
