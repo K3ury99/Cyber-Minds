@@ -67,6 +67,5 @@ Contributions are welcome. If you wish to contribute to the project, please foll
 ## 📔 License
 This project is licensed under the [MIT License](./LICENSE).
 
-## Credits 🎉
-
+> [!IMPORTANT]
 This project was developed by: **Keury Ramírez, Victor Sanchez**.
